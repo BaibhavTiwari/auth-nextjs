@@ -18,11 +18,11 @@ export default function  signup() {
 
   return (
     <div className ='flex flex-col items-center justify-center min-h-screen py-4'>
-      <h1>Login</h1>
+      <h1 className="text-2xl py-4">Login</h1>
       <hr/>
       <label htmlFor="username">Email</label>
       <input
-      className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600"
+        className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600  text-black"
       id="email"
       type="text"
       value={user.email}
@@ -31,7 +31,7 @@ export default function  signup() {
       />
       <label htmlFor="username">Password</label>
       <input
-      className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600"
+        className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600  text-black"
       id="password"
       type="password"
       value={user.password}
@@ -40,7 +40,7 @@ export default function  signup() {
       />
       <button 
       onClick={onLogin}
-      className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600">Login Here</button>
+        className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600  text-white">Login Here</button>
       <Link href='/signup'>Visit Signup</Link>
     </div>
   )
